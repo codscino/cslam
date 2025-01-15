@@ -147,6 +147,7 @@ add_dependencies(map_manager
   ${${PROJECT_NAME}_EXPORTED_TARGETS})
 ament_target_dependencies(map_manager 
   ${Libraries} 
+  cv_bridge 
   cslam_common_interfaces cslam_common_interfaces)
 set_target_properties(map_manager 
   PROPERTIES OUTPUT_NAME "map_manager")
